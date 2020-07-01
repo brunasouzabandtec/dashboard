@@ -10,6 +10,13 @@ export async function fetchLogs(idsMaquinas: string[]) {
   return data;
 }
 
+export async function fetchQtdLogs() {
+  const response = await fetch(`${url}/logs`);
+  const data = await response.json();
+
+  return data.length;
+}
+
 export async function generateReport(
   idMaquina: string,
   startDate: string,

@@ -16,3 +16,10 @@ export async function fetchMaquinasFuncionario(idFuncionario: string) {
 
   return data;
 }
+
+export async function fetchQtdMaquinas(fkGestor: string) {
+  const response = await fetch(`${url}/maquinas/count/${fkGestor}`);
+  const data = await response.json();
+
+  return data;
+}

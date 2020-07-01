@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-import { Container, Table, Button } from "src/components";
+import { Button, Container, Table } from "src/components";
 import { generateReport } from "src/services/logs";
 
 export default function Report() {
@@ -30,6 +30,7 @@ export default function Report() {
       <div className="flex justify-center my-5 text-centers">
         <Button className="">Acessar PowerBI</Button>
       </div>
+
       <h2 className="text-2xl font-bold leading-4 text-center text-gray-900">
         Relatório {nomeFuncionario ? `- ${nomeFuncionario}` : ""}
       </h2>
