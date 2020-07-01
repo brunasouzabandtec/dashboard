@@ -34,13 +34,12 @@ export default function Home() {
   return (
     <Layout heading={`Olá, ${gestor?.nomeGestor || "..."}`}>
       <h2 className="text-2xl font-bold leading-4 text-gray-900">
-        Estatísticas gerais
+        Dados gerais
       </h2>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-        <Details label="Memória RAM" value="16GB" icon="annotation" />
-        <Details label="CPU" value="2.5Ghz" icon="annotation" />
-        <Details label="HD" value="1TB" icon="annotation" />
+      <div className="flex grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 content">
+        <Details label="Total de funcionários" value="4" icon="userGroup" />
+        <Details label="Total de máquinas" value="5" icon="terminal" />
       </div>
 
       <h2 className="text-2xl font-bold leading-4 text-gray-900">
